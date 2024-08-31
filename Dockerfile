@@ -7,4 +7,4 @@ COPY . .
 RUN chown -R app:app /app
 USER app
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
