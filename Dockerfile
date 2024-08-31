@@ -4,6 +4,6 @@ USER app
 WORKDIR /app
 COPY --chown=app:app package*.json .
 RUN npm install
-COPY . .
+COPY --chown=app:app . .
 EXPOSE 3000
 CMD ["npm", "run", "dev"]
